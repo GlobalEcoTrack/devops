@@ -4,7 +4,7 @@ Serviço de Validação de Consultas Odontológicas
 
 ### Link p/ apresentação da solução: https://www.youtube.com/watch?v=tvKSlDiB8sQ
 
-### Link do video comprovando o funcionamento do App (DO ZERO): 
+### Link do video comprovando o funcionamento do App (DO ZERO): https://youtu.be/KkRSq7GKQMA
 
 ## Integrantes do Grupo
 
@@ -26,6 +26,24 @@ Serviço de Validação de Consultas Odontológicas
 - Na vm do Azure, foi logado no Docker Hub e a imagem foi baixada e rodada.
 - Configuramos o Azure para liberar a porta 8080 para a aplicação Spring Boot.
 
+FLUXO DE DADOS 
+
+1. Usuário Interage com a VM: 
+Entrada: O usuário realiza uma ação na máquina virtual (VM), como acessar um aplicativo, enviar uma requisição ou inserir dados de um formulário. 
+Processamento: A VM recebe a solicitação do usuário e a encaminha para o próximo componente na cadeia, que é o orquestrador Docker. 
+
+2. Docker: 
+Função: O Docker gerencia o container do mesmo, distribuindo as tarefas entre ele. 
+Processamento: Ao receber a solicitação da VM, o Docker direciona a requisição para o container da API Java. 
+
+3. API Java: 
+Função: A API Java realiza o processamento principal da aplicação. 
+Processamento: A API Java processa a requisição recebida e manda para o banco de dados 
+
+4. Banco de Dados FIAP: 
+Função: O banco de dados armazena os dados da aplicação. 
+Processamento: Ao receber uma requisição da API Java, o banco de dados realiza a operação solicitada (consulta, inserção, atualização ou exclusão) e retorna os resultados para a API Java. 
+
 ## Como testar a aplicação
 
 - O link para a aplicação rodando no Azure é: http://191.232.39.193:8080
@@ -34,4 +52,4 @@ Serviço de Validação de Consultas Odontológicas
 - Para testar a aplicação, é necessário realizar o login e obter o token JWT, e inseri-lo no Authorization das requisições, como bearer token.
 - A aplicação está rodando no Azure, e o banco de dados Oracle está hospedado em um servidor remoto da FIAP.
 
-![DESENHO-ARQUITETURa](./desenho.png)
+![DESENHO-ARQUITETURA](./desenho.png)
