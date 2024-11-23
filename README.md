@@ -9,11 +9,8 @@ Serviço de Validação de Consultas Odontológicas
 ## Integrantes do Grupo
 
 ### Kauã Almeida Silveira - RM552618
-- **Responsável por:** API em Java Spring Boot, integração com o banco de dados Oracle, e API Python com Roboflow para visão computacional.
 ### Rafael Vida - RM553721
-- **Responsável por:** DevOps no Azure e QA, garantindo o pipeline de integração contínua e a qualidade do software.
 ### Gustavo Maia - RM553270
-- **Responsável por:** Desenvolvimento do App em Kotlin para Android e site em C#.
 
 RESUMO 
 Com base nos conhecimentos adquiridos em sala de aula, este projeto visa proporcionar a população uma maneira mais simples e automatizada de monitorar o uso energético de sua casa, obtendo relatórios do consumo de energia dos cadastros feitos pelos próprios usuários, através de um aplicativo. 
