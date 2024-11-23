@@ -1,7 +1,5 @@
 # Eco Track
 
-Serviço de Validação de Consultas Odontológicas
-
 ### Link p/ apresentação da solução: https://www.youtube.com/watch?v=tvKSlDiB8sQ
 
 ### Link do video comprovando o funcionamento do App (DO ZERO): https://youtu.be/KkRSq7GKQMA
